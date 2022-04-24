@@ -1,0 +1,19 @@
+<p>options works!</p>
+<h1>Select Feed Content</h1>
+<label class="container">New York Times News
+  <input type="checkbox" checked="checked" [(ngModel)]="news">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Sports
+  <input type="checkbox" [(ngModel)]="sports">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Breaking News
+  <input type="checkbox" [(ngModel)]="breaking_news">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Financial Times
+  <input type="checkbox" [(ngModel)]="finance">
+  <span class="checkmark"></span>
+</label>
+<button class="button" (click)="onSave()"> Save </button>

@@ -1,0 +1,36 @@
+<p>dashboard works!</p>
+<button (click)="onTwitterSignIn()" mat-button>Sign into Twitter</button>
+
+
+
+<!-- <mat-nav-list>
+    <a mat-list-item href="{{article.url}}" *ngFor="let article of nyTimesResults"> 
+        <h1 matline>{{ article.title }} </h1><br matline>
+        {{ article.byline }} <br matline>
+        {{ article.abstract }}
+    </a>
+ </mat-nav-list> -->
+ <h1>New York Times Headlines</h1>
+ <div *ngFor="let article of nyTimesResults">
+    <a href="{{article.url}}"><span></span></a>
+    <h1>{{ article.title }} </h1>
+    {{ article.byline }} <br>
+    {{ article.abstract }}
+ </div>
+
+
+ <h1>Sports News</h1>
+ <div *ngFor="let article of sportsResults">
+    <a href="{{article.url}}"><span></span></a>
+    <h1>{{ article.title }} </h1>
+    {{ article.author }} <br>
+    {{ article.description }}
+ </div>
+
+ <h1>Top USA Headlines </h1>
+ <div *ngFor="let article of newsResults">
+    <a href="{{article.url}}"><span></span></a>
+    <h1>{{ article.title }} </h1>
+    {{ article.author }} <br>
+    {{ article.description }}
+ </div>
